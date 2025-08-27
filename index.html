@@ -43,7 +43,7 @@
 
                 <div class="space-x-2 sm:flex">
                     <button class="btn rounded-full font-bold bg-[#edfff1] hover:bg-slate-200">
-                        <h1>0</h1>
+                        <h1 id="increase">0</h1>
                         <img src="./assets/heart.png" class="h-7" alt="">
                     </button>
 
@@ -53,7 +53,7 @@
                     </button>
 
                     <button class="btn rounded-full bg-[#00A63E] text-white font-bold hover:bg-gray-600">
-                        <p>2 Copy</p>
+                        <p>0 Copy</p>
 
                     </button>
                 </div>
@@ -78,15 +78,17 @@
     <!-- card section -->
 
     <main class="bg-[#dfefff]">
-        <div class="grid grid-cols-4  gap-3 py-8 p-8">
-            <div class=" grid grid-cols-3 col-span-3 space-x-3 space-y-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-3 py-8 p-8">
+
+            <div class="grid grid-cols-1 md:col-span-3 md:grid-cols-3 space-x-3 space-y-2">
                 <div class="card bg-base-100  rounded-lg shadow-sm p-6 py-6 ">
+
                     <div class="flex justify-between items-center">
                         <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2">
                             <img src="./assets/emergency.png" alt="">
                         </button>
                         <div>
-                            <span><i class="fa-regular fa-heart text-3xl"></i></span>
+                            <p class="heart"><i class="fa-regular fa-heart text-3xl"></i></p>
                         </div>
                     </div>
 
@@ -97,8 +99,8 @@
                         All
                     </button>
 
+                    <!-- two Button** -->
                     <div class="flex space-x-11 mt-8">
-
                         <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i
                                 class="fa-solid fa-copy space-x-2"></i>Copy</button>
 
@@ -106,6 +108,7 @@
                                 class="fa-solid fa-phone"></i>
                             Call</button>
                     </div>
+
                 </div>
 
                 <!-- ****card 2 Police Helpline Number-->
@@ -115,8 +118,9 @@
                         <button class="btn rounded-2xl bg-[#dfefff] w-20 h-20 p-2">
                             <img src="./assets/police.png" alt="">
                         </button>
+
                         <div>
-                            <span><i class="fa-regular fa-heart text-3xl"></i></span>
+                            <p class="heart"><i class="fa-regular fa-heart text-3xl"></i></p>
                         </div>
                     </div>
 
@@ -127,14 +131,16 @@
                         Police
                     </button>
 
-                    <div class="flex space-x-11 mt-8">
+                    <!-- two Button ** -->
 
+                    <div class="flex space-x-11 mt-8">
                         <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i
                                 class="fa-solid fa-copy space-x-2"></i>Copy</button>
 
                         <button class="btn bg-[#00a63e] w-28 rounded-lg text-lg text-slate-50 hover:bg-zinc-500"><i
                                 class="fa-solid fa-phone"></i>
                             Call</button>
+
                     </div>
                 </div>
 
@@ -143,89 +149,87 @@
 
                 <div class="card bg-base-100  rounded-lg shadow-sm p-6 py-6 ">
                     <div class="flex justify-between items-center">
-                        <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2">
-                            <img src="./assets/fire-service.png" alt="">
-                        </button>
+                        <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2"><img src="./assets/fire-service.png"
+                                alt=""> </button>
+
                         <div>
-                            <span><i class="fa-regular fa-heart text-3xl"></i></span>
+                            <p class="heart"><i class="fa-regular fa-heart text-3xl"></i></p>
                         </div>
                     </div>
 
                     <h1 class="Hind-Madurai text-xl font-bold mt-4">Fire Service Number</h1>
                     <p class="roboto text-gray-600">Fire Service</p>
                     <h2 class="text-xl font-bold mt-5">999</h2>
-                    <button class="btn rounded-2xl bg-slate-100 text-gray-600 text-xl p-2 w-20">
-                      Fire
-                    </button>
+                    <button class="btn rounded-2xl bg-slate-100 text-gray-600 text-xl p-2 w-20"> Fire </button>
+
+                    <!-- two button** -->
 
                     <div class="flex space-x-11 mt-8">
-
                         <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i
-                                class="fa-solid fa-copy space-x-2"></i>Copy</button>
+                                class="fa-solid fa-copy space-x-2"></i>
+                                Copy</button>
 
                         <button class="btn bg-[#00a63e] w-28 rounded-lg text-lg text-slate-50 hover:bg-zinc-500"><i
                                 class="fa-solid fa-phone"></i>
                             Call</button>
+
                     </div>
+
                 </div>
 
                 <!-- card 4 Ambulance Service-->
 
                 <div class="card bg-base-100 rounded-lg shadow-sm p-6 py-6 ">
                     <div class="flex justify-between items-center">
-                        <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2">
-                            <img src="./assets/ambulance.png" alt="">
-                        </button>
+                        <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2"><img src="./assets/ambulance.png" alt=""></button>
+
                         <div>
-                            <span><i class="fa-regular fa-heart text-3xl"></i></span>
+                            <p class="heart"><i class="fa-regular fa-heart text-3xl"></i></p>
                         </div>
                     </div>
 
                     <h1 class="Hind-Madurai text-xl font-bold mt-4">Ambulance Service</h1>
                     <p class="roboto text-gray-600">Ambulance</p>
                     <h2 class="text-xl font-bold mt-5">1994-999999</h2>
-                    <button class="btn rounded-2xl w-20 bg-slate-100 text-gray-600 text-xl p-2">
-                     Health
-                    </button>
+                    <button class="btn rounded-2xl w-20 bg-slate-100 text-gray-600 text-xl p-2">Health</button>
+                   
+                    <!-- two button -->
 
                     <div class="flex space-x-11 mt-8">
-
-                        <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i
+                     <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i
                                 class="fa-solid fa-copy space-x-2"></i>Copy</button>
 
                         <button class="btn bg-[#00a63e] w-28 rounded-lg text-lg text-slate-50 hover:bg-zinc-500"><i
                                 class="fa-solid fa-phone"></i>
                             Call</button>
                     </div>
+
                 </div>
 
                 <!-- **** card 5 Women & Child Helpline -->
 
                 <div class="card bg-base-100  rounded-lg shadow-sm p-6 py-6 ">
                     <div class="flex justify-between items-center">
-                        <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2">
-                            <img src="./assets/emergency.png" alt="">
-                        </button>
+                        <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2"><img src="./assets/emergency.png" alt=""></button>
+
                         <div>
-                            <span><i class="fa-regular fa-heart text-3xl"></i></span>
+                            <p class="heart"><i class="fa-regular fa-heart text-3xl"></i></p>
                         </div>
                     </div>
 
                     <h1 class="Hind-Madurai text-xl font-bold mt-4">Women & Child Helpline</h1>
                     <p class="roboto text-gray-600">Women & Child Helpline</p>
                     <h2 class="text-xl font-bold mt-5">109</h2>
-                    <button class="btn rounded-2xl w-20 bg-slate-100 text-gray-600 text-xl p-2">
-                       Help
-                    </button>
-
+                    <button class="btn rounded-2xl w-20 bg-slate-100 text-gray-600 text-xl p-2">Help</button>
+       <!-- two button -->
                     <div class="flex space-x-11 mt-8">
-
                         <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i
                                 class="fa-solid fa-copy space-x-2"></i>Copy</button>
 
                         <button class="btn bg-[#00a63e] w-28 rounded-lg text-lg text-slate-50 hover:bg-zinc-500"><i
                                 class="fa-solid fa-phone"></i>
                             Call</button>
+
                     </div>
                 </div>
 
@@ -233,29 +237,26 @@
 
                 <div class="card bg-base-100 rounded-lg shadow-sm p-6 py-6 ">
                     <div class="flex justify-between items-center">
-                        <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2">
-                            <img src="./assets/emergency.png" alt="">
-                        </button>
+                        <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2"><img src="./assets/emergency.png" alt=""></button>
+
                         <div>
-                            <span><i class="fa-regular fa-heart text-3xl"></i></span>
+                            <p class="heart"><i class="fa-regular fa-heart text-3xl"></i></p>
                         </div>
                     </div>
 
                     <h1 class="Hind-Madurai text-xl font-bold mt-4">Anti-Corruption Helpline</h1>
                     <p class="roboto text-gray-600">Anti-Corruption </p>
                     <h2 class="text-xl font-bold mt-5">106</h2>
-                    <button class="btn rounded-2xl w-20 bg-slate-100 text-gray-600 text-xl p-2">
-                     Govt
-                    </button>
-
+                    <button class="btn rounded-2xl w-20 bg-slate-100 text-gray-600 text-xl p-2"> Govt.</button>
+                      
+                    <!-- two button -->
                     <div class="flex space-x-11 mt-8">
-
-                        <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i
-                                class="fa-solid fa-copy space-x-2"></i>Copy</button>
+                     <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i class="fa-solid fa-copy space-x-2"></i>Copy</button>
 
                         <button class="btn bg-[#00a63e] w-28 rounded-lg text-lg text-slate-50 hover:bg-zinc-500"><i
                                 class="fa-solid fa-phone"></i>
                             Call</button>
+
                     </div>
                 </div>
 
@@ -263,98 +264,101 @@
 
                 <div class="card bg-base-100  rounded-lg shadow-sm p-6 py-6 ">
                     <div class="flex justify-between items-center">
-                        <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2">
-                            <img src="./assets/emergency.png" alt="">
-                        </button>
+                    <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2"> <img src="./assets/emergency.png" alt=""></button>
+
                         <div>
-                            <span><i class="fa-regular fa-heart text-3xl"></i></span>
+                            <p class="heart"><i class="fa-regular fa-heart text-3xl"></i></p>
                         </div>
                     </div>
 
                     <h1 class="Hind-Madurai text-xl font-bold mt-4">Electricity Helpline</h1>
                     <p class="roboto text-gray-600">Electricity Outage</p>
                     <h2 class="text-xl font-bold mt-5">16216</h2>
-                    <button class="btn rounded-2xl w-28 bg-slate-100 text-gray-600 text-xl p-2">
-                   Electricity
-                    </button>
-
+                    <button class="btn rounded-2xl w-28 bg-slate-100 text-gray-600 text-xl p-2">Electricity</button>
+                
+                    <!-- two button -->
                     <div class="flex space-x-11 mt-8">
-
-                        <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i
-                                class="fa-solid fa-copy space-x-2"></i>Copy</button>
+                    <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i class="fa-solid fa-copy space-x-2"></i>Copy</button>
 
                         <button class="btn bg-[#00a63e] w-28 rounded-lg text-lg text-slate-50 hover:bg-zinc-500"><i
                                 class="fa-solid fa-phone"></i>
                             Call</button>
+
                     </div>
                 </div>
 
                 <!-- *** 8 Brac Helpline-->
                 <div class="card bg-base-100 rounded-lg shadow-sm p-6 py-6 ">
                     <div class="flex justify-between items-center">
-                        <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2">
-                            <img src="./assets/brac.png" alt="">
-                        </button>
+                <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2"><img src="./assets/brac.png" alt=""></button>
+                       
                         <div>
-                            <span><i class="fa-regular fa-heart text-3xl"></i></span>
+                            <p class="heart"><i class="fa-regular fa-heart text-3xl"></i></p>
                         </div>
                     </div>
 
                     <h1 class="Hind-Madurai text-xl font-bold mt-4">Brac Helpline</h1>
                     <p class="roboto text-gray-600">Brac</p>
                     <h2 class="text-xl font-bold mt-5">16445</h2>
-                    <button class="btn rounded-2xl w-20 bg-slate-100 text-gray-600 text-xl p-2">
-                          NGO
-                    </button>
+                    <button class="btn rounded-2xl w-20 bg-slate-100 text-gray-600 text-xl p-2">NGO</button>
+                        
+                    <!-- two button -->
+                    
                     <div class="flex space-x-11 mt-8">
-
                         <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i
                                 class="fa-solid fa-copy space-x-2"></i>Copy</button>
 
-                        <button class="btn bg-[#00a63e] w-28 rounded-lg text-lg text-slate-50 hover:bg-zinc-500"><i
-                                class="fa-solid fa-phone"></i>
-                            Call</button>
+                        <button class="btn bg-[#00a63e] w-28 rounded-lg text-lg text-slate-50 hover:bg-zinc-500"><i class="fa-solid fa-phone"></i> Call</button>
+
                     </div>
                 </div>
 
                 <!-- **** 9 Bangladesh Railway Helpline  -->
                 <div class="card bg-base-100 rounded-lg shadow-sm p-5 py-5 ">
                     <div class="flex justify-between items-center">
-                        <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2">
-                            <img src="./assets/Bangladesh-Railway.png" alt="">
+               <button class="btn rounded-2xl bg-[#ffe3e2] w-20 h-20 p-2"><img src="./assets/Bangladesh-Railway.png" alt="">
                         </button>
+                        
                         <div>
-                            <span><i class="fa-regular fa-heart text-3xl"></i></span>
+                            <p class="heart"><i class="fa-regular fa-heart text-3xl"></i></p>
                         </div>
                     </div>
 
                     <h1 class="Hind-Madurai text-xl font-bold mt-4">Bangladesh Railway Helpline </h1>
                     <p class="roboto text-gray-600">Bangladesh Railway</p>
                     <h2 class="text-xl font-bold mt-5">163</h2>
-                    <button class="btn rounded-2xl w-20 bg-slate-100 text-gray-600 text-xl p-2">
-                          Travel
-                    </button>
+                    <button class="btn rounded-2xl w-20 bg-slate-100 text-gray-600 text-xl p-2">Travel</button>
+                        
+                    <!-- two button -->
                     <div class="flex space-x-11 mt-8">
+                    <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i class="fa-solid fa-copy space-x-2"></i>Copy</button>
 
-                        <button class="btn text-gray-500 text-lg w-28 rounded-lg"><i
-                                class="fa-solid fa-copy space-x-2"></i>Copy</button>
-
-                        <button class="btn bg-[#00a63e] w-28 rounded-lg text-lg text-slate-50 hover:bg-zinc-500"><i
-                                class="fa-solid fa-phone"></i>
+                    <button class="btn bg-[#00a63e] w-28 rounded-lg text-lg text-slate-50 hover:bg-zinc-500"><i class="fa-solid fa-phone"></i>
                             Call</button>
+
                     </div>
                 </div>
 
             </div>
 
-            <div class="flex justify-between py-8 p-8 bg-white rounded-xl">
-                <h2 class="text-lg font-bold"><i class="fa-regular fa-clock"></i> Call History</h2>
-                <button class="btn bg-[#00a63e] rounded-2xl text-lg text-slate-50 hover:bg-zinc-500">Clear</button>
+            <!-- call history**** -->
+            <div class="py-8 p-8 bg-white rounded-xl">
+                <div class="flex justify-between">
+                    <h2 class="text-lg font-bold"><i class="fa-regular fa-clock"></i> Call History</h2>
+                    <button class="btn bg-[#00a63e] rounded-2xl text-lg text-slate-50 hover:bg-zinc-500">Clear</button>
+                </div>
+
+                <div class="cart-box rounded-lg bg-[#fafafa] mt-7">
+                    <h3>text</h3>
+                </div>
 
             </div>
+
+
         </div>
 
     </main>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
