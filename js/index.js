@@ -16,6 +16,7 @@ let points = 100;
 const coin = document.getElementById('point-btn');
 const callbtn = document.getElementsByClassName('call-btn');
 const history = document.getElementById('all-history');
+const historyremove = document.getElementById('parent-div');
 for (let callbutton of callbtn) {
     callbutton.addEventListener('click', function () {
 
@@ -30,14 +31,13 @@ for (let callbutton of callbtn) {
         historyCard.innerHTML = `
 <div class="card bg-[#dfdddd] mt-4 p-4">
     <h4 class="text-lg font-bold">${heading}</h4>
-    <h2>${Number}</h2>
+    <h2 class="text-lg font-bold">${Number}</h2>
   <p>Time : ${somoy}</p>
   <p>Date : ${date}</p>
 </div>
         `;
 
-        history.append(historyCard);
-
+        history.append(historyCard); 
         if (points >= 20) {
             points -= 20;
             coin.innerText = points;
@@ -54,14 +54,38 @@ for (let callbutton of callbtn) {
     })
 }
 
+// clear-button***
+ 
+const clearbutton =document.getElementById('clear-button');
+clearbutton.addEventListener('click',function(){
+const historyremove = document.getElementById('all-history');
+  historyremove.innerText =''
+    
+})
+
+// copy button***
+
+const allcopy = document.getElementsByClassName('copy-btn');
+const phonecall =document.getElementsByClassName('imergency-number')
+let copynumber = 0;
+for (const copybuttons of allcopy) {
+    copybuttons.addEventListener('click', function () {
+        copynumber ++
+        const duplicate = document.getElementById('counting')
+        duplicate.innerText = copynumber;
+         const copyNumber = copybuttons.parentNode.parentNode.children[1].children[2].innerText;
+         navigator.clipboard.writeText(copyNumber)
+         .then(()=>{
+            alert(`Copied : ${copyNumber}`);
+
+         }).catch("Not copied numer")        
+    })
+}
 
 
 
 
-
-
-
-
+ 
 
 
 
