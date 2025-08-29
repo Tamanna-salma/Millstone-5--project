@@ -74,7 +74,7 @@ for (const copybuttons of allcopy) {
          const copyNumber = copybuttons.parentNode.parentNode.children[1].children[2].innerText;
          navigator.clipboard.writeText(copyNumber)
          .then(()=>{
-            alert(`Copied : ${copyNumber}`);
+            alert(`Emergency Number Copied : ${copyNumber}`);
 
          }).catch("Not copied numer")        
     })
