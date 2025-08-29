@@ -41,7 +41,6 @@ for (let callbutton of callbtn) {
         if (points >= 20) {
             points -= 20;
             coin.innerText = points;
-
             alert(`
                 ${heading}
                  ${Number} 
@@ -59,8 +58,7 @@ for (let callbutton of callbtn) {
 const clearbutton =document.getElementById('clear-button');
 clearbutton.addEventListener('click',function(){
 const historyremove = document.getElementById('all-history');
-  historyremove.innerText =''
-    
+  historyremove.innerHTML =''    
 })
 
 // copy button***
