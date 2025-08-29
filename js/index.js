@@ -15,20 +15,43 @@ for (const loves of loveIcon) {
 let points = 100;
 const coin = document.getElementById('point-btn');
 const callbtn = document.getElementsByClassName('call-btn');
+const history = document.getElementById('all-history');
 for (let callbutton of callbtn) {
-    callbutton.addEventListener('click',function(){
-        console.log('clicked');
-if(points >=20){
-    points -= 20;
-    coin.innerText =points;
-    alert('20 points')
+    callbutton.addEventListener('click', function () {
 
-} else{
-    alert('not point')
-}
-   
+        const heading = callbutton.parentNode.parentNode.children[1].children[0].innerText;
+        // const subheading =callbutton.parentNode.parentNode.children[1].children[1].innerText
+        const Number = callbutton.parentNode.parentNode.children[1].children[2].innerText;
+        const gettime = new Date();
+        const date = gettime.toLocaleDateString();
+        const somoy = gettime.toLocaleTimeString();
+        const historyCard = document.createElement("div");
+
+        historyCard.innerHTML = `
+<div class="card bg-[#dfdddd] mt-4 p-4">
+    <h4 class="text-lg font-bold">${heading}</h4>
+    <h2>${Number}</h2>
+  <p>Time : ${somoy}</p>
+  <p>Date : ${date}</p>
+</div>
+        `;
+
+        history.append(historyCard);
+
+        if (points >= 20) {
+            points -= 20;
+            coin.innerText = points;
+
+            alert(`
+                ${heading}
+                 ${Number} 
+                Time :${somoy} 
+                Date :${date}`)
+
+        } else {
+            alert('not points')
+        }
     })
-    
 }
 
 
@@ -45,19 +68,6 @@ if(points >=20){
 
 
 
-
-// callbtn.addEventListener('click', function () {
-//     if (points >= 20) {
-//         points -= 20;
-//         coin.innerText = ;
-//         console.log("coinbtn");
-//         alert('20 point deduct')
-
-//     } else {
-//         alert('not points')
-//     }
-
-// })
 
 
 
